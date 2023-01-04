@@ -1,0 +1,544 @@
+/*VARIABLES*/
+* {
+  margin: 0;
+  padding: 0; 
+box-sizing: border-box;}
+
+body {
+  background-color: whitesmoke; }
+
+.padreContacto {
+  background-color: #bee4be; }
+
+/*BOTON WHATSAPP FIJO*/
+.botonWhatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 20px;
+  z-index: 999; }
+  .botonWhatsapp .whatsap {
+    width: 60px; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3000;
+  background-image: linear-gradient(to right, #f8b6b6, #f9c3c3, #fbd6d6); }
+  header .tamLogo {
+    width: 80px; }
+  header li {
+    list-style-type: none; }
+    header li a {
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif; }
+
+
+  /*H4*/ 
+  footer .linea {
+    border-top: 2px black solid;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 50px;
+    width: 70%; }
+  footer .piePagina {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    margin-block-end: 50px; }
+  footer .tituloFooter {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px; }
+  footer .redesSociales {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 250px; }
+    footer .redesSociales .icono {
+      width: 30px; }
+      footer .redesSociales .icono:hover {
+        transform: translate(-10px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+/*TITULO INDEX*/
+.tituloIndex {
+  color: black;
+  background-position: 50%;
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 50px; }
+
+/*TITULOS ARTICULOS*/
+.title {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 50px; }
+
+/*TITULO CONTACTO*/
+#contacto {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 50px;
+  padding: 10px 50px; }
+
+/*SUBTITULO INDEX*/
+.subtitulo {
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1,5rem; }
+  .subtitulo .corazon {
+    width: 15px; }
+
+/*SUBTITULO CONTACTOS*/
+.subtituloContactos {
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1,5rem;
+  padding: 20px 50px; }
+
+/*CAROUSEL*/
+.positionCarousel {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  margin-left: 280px;
+  width: 60%; }
+
+/*CONTACTOS*/
+.contactos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 150px; }
+  .contactos .contacto {
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem; }
+    .contactos .contacto .anclaArt {
+      background-color: whitesmoke;
+      border-radius: 4px;
+      text-decoration: none;
+      color: black; }
+      .contactos .contacto .anclaArt:hover {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold; }
+  .contactos .iconos {
+    width: 100px; }
+
+/*NEWSLETTER*/
+.blog {
+  background-color: rgb(144, 255, 229);
+  width: 100%; }
+  .blog .newsletter {
+    color: black;
+    font-family: "Amatic SC", cursive;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 100px; }
+    .blog .newsletter .estrella {
+      width: 20px; }
+  .blog .email {
+    margin-top: 30px;
+    text-align: center; }
+    .blog .email #mail {
+      width: 300px;
+      border-radius: 7px; }
+    .blog .email #enviar {
+      background-color: white;
+      font-family: "Amatic SC", cursive;
+      font-size: 1rem;
+      border: 0;
+      border-radius: 7px;
+      width: 50px; }
+
+/*LOGIN*/
+
+.mainLogin{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  background-color:#bee4be;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);}
+
+.formLogin .titulo {
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  margin-bottom: 30px; }
+
+.formLogin .inputLogin{
+  width: 70%;
+  margin-bottom: 35px;
+  padding: 10px 10px 10px 5px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+  background: none;}
+
+.formLogin .iconLogin{
+  font-size: 30px;
+  margin-right: 10px;
+} 
+.formLogin .link{
+  color: grey;
+  margin-bottom: 15px;
+}
+.formLogin .buttonLogin{
+  color: black;
+  background-color: #f9c3c3;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  margin: 10px;}
+  #button:hover {
+    cursor: pointer;
+    transform: translate(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+/*REGISTRO*/
+.formRegister{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #bee4be;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;}
+
+  .formRegister .titulo {
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px; }
+
+  .formRegister .grupo{
+    position: relative;
+    margin: 40px;
+  }
+
+.inputRegister{
+  background: none;
+  display: block;
+  padding: 10px 10px 10px 5px;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+.inputRegister:focus{
+  outline: none;
+  color: grey;
+}
+.labelRegister{
+  color: grey;
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+}
+.inputRegister:focus~.labelRegister,
+.inputRegister:valid~.labelRegister{
+  top: -14px;
+  font-size: 12px;
+  color: black;}
+  .formRegister .buttonRegister{
+    color: black;
+    width: 70%;
+    background-color: #f9c3c3;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    margin: 10px;}
+    .buttonRegister:hover {
+      cursor: pointer;
+      transform: translate(-5px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+/*FORMULARIO*/
+form {
+  width: 500px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px; }
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 7px; }
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: none;
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 100%; }
+
+#my-form-button {
+  width: 100%;
+  background-color: #f9c3c3;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  margin: 10px;}
+  #my-form-button:hover {
+    cursor: pointer;
+    transform: translate(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+/*ARTICULOS*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  .container .card {
+    width: 380px;
+    height: 470px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    .container .card:hover {
+      transform: translate(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+    .container .card img {
+      padding: 5px;
+      width: 380px;
+      height: 230px; }
+    .container .card h4 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500; }
+    .container .card p {
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300;
+      padding: 5%; }
+    .container .card button {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 5%;
+      border-radius: 4px;
+      background-color: white;
+      font-family: Arial, Helvetica, sans-serif; }
+
+/*CARRITO*/
+
+.container-carrito {
+  padding: 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carrito-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.carrito-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(144, 255, 229);
+  padding: .5rem;
+  padding-right: 1.5rem;
+  border-radius: 1rem;
+}
+.carrito-producto-img {
+  width: 4rem;
+  border-radius: 1rem;
+}
+.carrito-producto small {
+  font-size: .75rem;
+}
+.carrito-producto-eliminar {
+  border: 0;
+  background-color: transparent;
+}
+.carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+}
+.carrito-acciones-vaciar{
+  border: 0;
+  background-color: rgb(251, 214, 227);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+.carrito-acciones-derecha{
+  display: flex;
+}
+.carrito-acciones-total{
+  display: flex;
+  text-align: center;
+  background-color: rgb(251, 214, 227);
+  padding: 1rem;
+  text-transform: uppercase;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  gap: 1rem;
+}
+.carrito-acciones-comprar{
+  border: 0;
+  background-color: rgb(144, 255, 229);
+  padding: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  text-transform: uppercase;
+}
+.disabled{
+  display: none;
+}
+.carrito-numero{
+  display: flex;
+  flex-direction: row;
+}
+.numerito{
+  background-color: transparent;
+  padding: .15rem .25rem;
+  border-radius: .25rem;
+  font-size: .80rem;
+}
+.sumar{
+  cursor: pointer;
+}
+.restar{
+  cursor: pointer;
+}
+
+/*APLICO RESPONSIVE PARA MOVIL*/
+@media screen and (max-width: 500px) {
+  * {
+    padding: 0 !important; }
+  /* APLICO GRID A INDEX */
+  .mainIndex {
+    display: grid;
+    grid-template-areas: "titulo" "subtitulo" "imagenCarousel" "contactos"; }
+  .positionCarousel {
+    grid-area: imagenCarousel;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%; }
+  .contactos {
+    grid-area: contactos;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0; }
+    .contactos .iconos {
+      width: 60px; }
+    .contactos .iconoWhatsapp {
+      width: 60px; }
+    .contactos .contacto {
+      font-size: 0.5rem; }
+  .blog {
+    display: none; }
+  .tituloIndex {
+    grid-area: titulo;
+    font-size: 4rem; }
+  .subtitulo {
+    grid-area: subtitulo;
+    font-size: 0,5rem; }
+  .title {
+    text-align: center;
+    font-size: 2rem; }
+  footer .tituloFooter {
+    display: none; }
+  footer .redesSociales {
+    margin-top: 20px; }
+    footer .redesSociales .icono {
+      width: 20px; }
+  footer .piePagina {
+    margin-top: 30px;
+    font-size: 0,5rem; }
+  .botonWhatsapp {
+    display: none; }
+  form {
+    max-width: 90%; }
+  .card p {
+    padding: 5% !important; } }
+
+/*APLICO RESPONSIVE PARA TABLET*/
+@media screen and (min-device-width: 500px) and (max-device-width: 990px) {
+  * {
+    padding: 0 !important; }
+  .positionCarousel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%; }
+  .contactos {
+    margin-top: 0; }
+    .contactos .iconos {
+      width: 50px; }
+    .contactos .iconoWhatsapp {
+      width: 50px; }
+    .contactos .contacto {
+      font-size: 0,5rem; }
+  .tituloIndex {
+    grid-area: titulo;
+    font-size: 4rem; }
+  .subtitulo {
+    font-size: 0,5rem; }
+  .title {
+    text-align: center;
+    font-size: 2rem; }
+  footer .tituloFooter {
+    display: none; }
+  footer .redesSociales {
+    margin-top: 20px; }
+    footer .redesSociales .icono {
+      width: 20px; }
+  footer .piePagina {
+    margin-top: 30px;
+    font-size: 0,5rem; }
+  .botonWhatsapp {
+    display: none; }
+  form {
+    max-width: 90%; }
+  .card p {
+    padding: 5% !important; } }

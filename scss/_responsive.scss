@@ -1,0 +1,142 @@
+/*APLICO RESPONSIVE PARA MOVIL*/
+
+@media screen and (max-width: 500px) { 
+    *{
+        padding: 0 !important;
+    }
+    /* APLICO GRID A INDEX */
+    .mainIndex{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "subtitulo"
+        "imagenCarousel"
+        "contactos";
+    }
+    .positionCarousel{
+        grid-area: imagenCarousel;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    .contactos{
+        grid-area: contactos;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        .iconos{
+            width: 60px;
+        }
+        .iconoWhatsapp{
+            width: 60px;
+        }
+        .contacto{
+            font-size: 0.5rem;
+        }
+    }
+    .blog{
+        display: none;
+    }
+    .tituloIndex {
+        grid-area: titulo;
+        font-size: 4rem;
+    }
+    .subtitulo{
+        grid-area: subtitulo;
+        font-size: 0,5rem;
+    }
+    .title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    footer{
+        .tituloFooter{
+            display: none;
+        }
+        .redesSociales{
+            margin-top: 20px;
+            .icono{
+                width: 20px;
+            }
+        }
+        .piePagina{
+            margin-top: 30px;
+            font-size: 0,5rem;
+        }
+    }
+    .botonWhatsapp{
+        display: none;
+    }
+    form {
+        max-width: 90%;
+    }
+    .card{
+        p{
+            padding: 5%!important;
+        }
+    }
+} 
+/*APLICO RESPONSIVE PARA TABLET*/
+
+@media screen and (min-device-width: 500px) and (max-device-width: 990px) { 
+
+    *{
+        padding: 0 !important;
+    }
+    .positionCarousel{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    .contactos{
+        margin-top: 0;
+        .iconos{
+            width: 50px;
+        }
+        .iconoWhatsapp{
+            width: 50px;
+        }
+        .contacto{
+            font-size: 0,5rem;
+        }
+    }
+    .tituloIndex {
+        grid-area: titulo;
+        font-size: 4rem;
+    }
+    .subtitulo{
+        font-size: 0,5rem;
+    }
+    .title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    footer{
+        .tituloFooter{
+            display: none;
+        }
+        .redesSociales{
+            margin-top: 20px;
+            .icono{
+                width: 20px;
+            }
+        }
+        .piePagina{
+            margin-top: 30px;
+            font-size: 0,5rem;
+        }
+    }
+    .botonWhatsapp{
+        display: none;
+    }
+    form {
+        max-width: 90%;
+    }
+    .card{
+        p{
+            padding: 5%!important;
+        }
+    }
+}

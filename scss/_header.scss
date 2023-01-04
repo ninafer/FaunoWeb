@@ -1,0 +1,18 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 3000;
+    background-image:linear-gradient(to right,#f8b6b6,#f9c3c3,#fbd6d6);
+    .tamLogo{
+        width: 80px;
+    }
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+                font-family: $monserrat;
+            }
+        }
+}

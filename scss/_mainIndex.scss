@@ -1,0 +1,68 @@
+/*CAROUSEL*/
+
+.positionCarousel {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    margin-left: 280px;
+    width: 60%;
+}
+/*CONTACTOS*/
+
+.contactos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+    .contacto {
+        display: inline-flex;
+        font-family: $monserrat;
+        text-transform: uppercase;
+        font-size: 1rem;
+        .anclaArt {
+            background-color: $color-contactos;
+            border-radius: 4px;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: black;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .iconos {
+        width: 100px;
+    }
+}
+/*NEWSLETTER*/
+
+.blog {
+    background-color: aquamarine;
+    width: 100%;
+    .newsletter {
+        color: black;
+        font-family: $amatic;
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 100px;
+        .estrella{
+            width: 20px;
+        }
+    }
+    .email {
+        margin-top: 30px;
+        text-align: center;
+        #mail {
+            width: 300px;
+            border-radius: 7px;
+        }
+        #enviar {
+            background-color: white;
+            font-family: $amatic;
+            font-size: 1rem;
+            border: 0;
+            border-radius: 7px;
+            width: 50px;
+        }
+    }
+}
